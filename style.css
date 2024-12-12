@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #f5f5f5;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  header nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?technology,design') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 7rem 1rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 8px solid #6a11cb;
+  }
+  
+  .hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 4rem 0;
+  }
+  
+  .about, .features, .contact {
+    background: #1a1a1a;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .about:hover, .features:hover, .contact:hover {
+    transform: translateY(-10px);
+  }
+  
+  .about h2, .features h2, .contact h2 {
+    text-align: center;
+    color: #6a11cb;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about p, .contact p {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 1.2rem;
+  }
+  
+  /* Features Section */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .feature-item {
+    background: linear-gradient(145deg, #232323, #1c1c1c);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .feature-item h3 {
+    color: #ff416c;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Contact Section */
+  .contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contact ul li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .contact ul li a {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact ul li a:hover {
+    color: #ff416c;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: linear-gradient(90deg, #1c1c1c, #292929);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 5px solid #6a11cb;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 120%;
+    height: 8px;
+    background: linear-gradient(90deg, #6a11cb, #ff416c);
+    transform: translateX(-50%);
+  }
+  
+/* Style for the list container */
+#command-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for each list item */
+  #command-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  #command-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for the command name (h3) */
+  #command-list h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* Style for the command description (p) */
+  #command-list p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+  }
+  
+  /* Style for the usage code block (pre) */
+  #command-list pre {
+    background-color: #282c34;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Optional: Add a subtle shadow to the list items */
+  #command-list li {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
